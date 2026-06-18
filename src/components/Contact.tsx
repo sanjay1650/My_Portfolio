@@ -120,7 +120,7 @@ export const Contact: React.FC = () => {
             <div className="space-y-4">
               
               {/* Location */}
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-850/80 shadow-sm">
+              <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-800/80 shadow-sm">
                 <div className="p-3 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -133,7 +133,7 @@ export const Contact: React.FC = () => {
               {/* Email */}
               <a 
                 href={`mailto:${email}`}
-                className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-850/80 hover:border-cyan-500/30 transition-all duration-300 group shadow-sm"
+                className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-800/80 hover:border-cyan-500/30 transition-all duration-300 group shadow-sm"
               >
                 <div className="p-3 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 group-hover:bg-blue-500/20 group-hover:text-cyan-300 transition-colors">
                   <Mail className="w-5 h-5" />
@@ -147,7 +147,7 @@ export const Contact: React.FC = () => {
               {/* Phone */}
               <a 
                 href={`tel:${phone.replace(/\s+/g, '')}`}
-                className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-850/80 hover:border-cyan-500/30 transition-all duration-300 group shadow-sm"
+                className="flex items-center gap-4 p-4 rounded-xl bg-slate-950/40 border border-slate-800/80 hover:border-cyan-500/30 transition-all duration-300 group shadow-sm"
               >
                 <div className="p-3 rounded-lg bg-blue-500/10 text-cyan-400 border border-blue-500/20 group-hover:bg-blue-500/20 group-hover:text-cyan-300 transition-colors">
                   <Phone className="w-5 h-5" />

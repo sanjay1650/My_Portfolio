@@ -65,11 +65,11 @@ export const Experience: React.FC = () => {
 
                   {/* Date & Location Coordinates */}
                   <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 font-medium">
-                    <span className="flex items-center gap-1.5 bg-slate-950 border border-slate-850 px-3 py-1 rounded-full">
+                    <span className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-3 py-1 rounded-full">
                       <Calendar className="w-3.5 h-3.5 text-blue-400" />
                       {exp.period}
                     </span>
-                    <span className="flex items-center gap-1.5 bg-slate-950 border border-slate-850 px-3 py-1 rounded-full">
+                    <span className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-3 py-1 rounded-full">
                       <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                       {exp.location}
                     </span>

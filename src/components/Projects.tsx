@@ -163,7 +163,7 @@ export const Projects: React.FC = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="p-6 sm:p-8 pt-0 flex gap-4 border-t border-slate-850/60 bg-slate-950/40">
+              <div className="p-6 sm:p-8 flex gap-4 border-t border-slate-800/60 bg-slate-950/40 rounded-b-2xl">
                 <a 
                   href={project.githubUrl}
                   target="_blank"

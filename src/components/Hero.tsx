@@ -31,8 +31,10 @@ export const Hero: React.FC = () => {
     e.preventDefault();
     const targetElement = document.getElementById(id);
     if (targetElement) {
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - 80;
       window.scrollTo({
-        top: targetElement.offsetTop - 80,
+        top: offsetPosition,
         behavior: 'smooth',
       });
     }

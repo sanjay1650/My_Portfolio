@@ -53,11 +53,16 @@ export const Navbar: React.FC = () => {
     const targetId = href.substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: 'smooth',
-      });
-      setActiveSection(targetId);
+      // Defer scroll slightly to allow menu transition and state changes to settle
+      setTimeout(() => {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - 80;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+        setActiveSection(targetId);
+      }, 220);
     }
   };
 
@@ -175,7 +180,7 @@ export const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
             className="lg:hidden w-full bg-slate-950/95 border-b border-slate-800/80 backdrop-blur-lg overflow-hidden"
           >
             <div className="px-4 pt-2 pb-6 space-y-1.5 sm:px-6">

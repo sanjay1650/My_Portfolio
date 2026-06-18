@@ -82,7 +82,7 @@ export const Education: React.FC = () => {
           </div>
 
           {/* Additional text highlights */}
-          <div className="mt-6 p-4 rounded-xl bg-slate-950/40 border border-slate-850/80 flex items-start gap-3">
+          <div className="mt-6 p-4 rounded-xl bg-slate-950/40 border border-slate-800/80 flex items-start gap-3">
             <CheckCircle className="w-4 h-4 text-cyan-400 mt-1 flex-shrink-0" />
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-sans font-light">
               <strong>Focus & Coursework:</strong> {edu.note}
